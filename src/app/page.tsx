@@ -1,10 +1,15 @@
 import Image from "next/image";
+import Navbar from "@/components/navbar";
 
 export default function Index() {
   return (
     <>
-      <h1>Hi, I&rsquo;m Frank!</h1>
-      <h2>Let me tell you a little about myself...</h2>
+      <div className="w-100 h-[45rem] bg-brick">
+        <Navbar />
+      </div>
+      <div className="w-100 h-[45rem] bg-light">
+
+      </div>
     </>
   );
 }
