@@ -4,8 +4,8 @@ import Navlink from "./navlink";
 export default function Navbar() {
   return (
     <nav className="flex gap-4">
-      <Navlink href="/" text="Project" />
-      <Navlink href="/about" text="Contact" />
+      <Navlink href="#" text="Project" />
+      <Navlink href="#" text="Contact" />
     </nav>
   );
 }

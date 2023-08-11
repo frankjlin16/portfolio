@@ -1,0 +1,7 @@
+.outer-div:hover .inner-div {
+    width: 100%;
+}
+
+.inner-div {
+    width: 1rem;
+}

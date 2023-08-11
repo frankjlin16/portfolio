@@ -1,4 +1,5 @@
 import Link from "next/link";
+import "./navlink.css";
 
 interface NavlinkProps {
     href: string;
@@ -7,9 +8,9 @@ interface NavlinkProps {
 
 export default function Navlink({ href, text }: NavlinkProps) {
     return (
-        <div>
+        <div className="outer-div">
             <Link href={href} className="text-2xl font-normal text-light">{text}</Link>
-            <div className="w-5 h-[0px] border border-light"></div>
+            <div className="inner-div h-[0px] border border-light"></div>
         </div>
     );
 }
