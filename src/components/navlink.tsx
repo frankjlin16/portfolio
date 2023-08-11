@@ -8,9 +8,9 @@ interface NavlinkProps {
 
 export default function Navlink({ href, text }: NavlinkProps) {
     return (
-        <div className="outer-div">
-            <Link href={href} className="text-2xl font-normal text-light">{text}</Link>
-            <div className="inner-div h-[0px] border border-light"></div>
+        <div className="group text-light border-light active:text-accent active:border-accent">
+            <Link href={href} className="text-xl font-normal">{text}</Link>
+            <div className="h-[0px] w-5 border group-hover:w-full"></div>
         </div>
     );
 }
