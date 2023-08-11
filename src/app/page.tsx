@@ -33,7 +33,7 @@ export default function Index() {
               <div>
                 <div className="profile-img">
                   <img
-                    src="https://onedrive.live.com/embed?resid=93EB8CC9A4B2ADF3%211664&authkey=%21AGnfeN4QRzYL89A&width=833&height=833"
+                    src="https://onedrive.live.com/embed?resid=93EB8CC9A4B2ADF3%211664&authkey=%21AGnfeN4QRzYL89A&width=833&height=833" width={833} height={833}
                     alt="Frank"
                   />
                 </div>
