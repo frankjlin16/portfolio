@@ -1,5 +1,4 @@
 import Link from "next/link";
-import "./navlink.css";
 
 interface NavlinkProps {
     href: string;
