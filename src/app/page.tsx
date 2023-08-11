@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import Image from "next/image";
 
 export default function Index() {
   return (
@@ -31,8 +32,8 @@ export default function Index() {
               </div>
               <div>
                 <div className="profile-img">
-                  <img
-                    src="https://onedrive.live.com/embed?resid=93EB8CC9A4B2ADF3%211664&authkey=%21AGnfeN4QRzYL89A&width=833&height=833" width={833} height={833}
+                  <Image
+                    src="https://phx02pap002files.storage.live.com/y4m8nDRjwmHlQqgEDWJuWWWxhGHJbau0bEams4wfpXqU5l7fdnji59uQkNnRdaJI15oOLhpXsByVidcHIDthH7jAJaebN7xVd-sN_R9dnirjCx29o_fqElUZ9RlNtas1X9VjFAfKZ7eq3L711Zoa158ffsAkIvIL0MopPg1vCOvNBsY7mYaxAZ39NN1eLfFoMYvZknXr4sgin_4T-Zpex-VpALoc5HStXYN6sjgKPWryr0?encodeFailures=1&width=795&height=795" width={833} height={833}
                     alt="Frank"
                   />
                 </div>
