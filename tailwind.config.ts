@@ -17,9 +17,11 @@ const config: Config = {
     colors: {
       'brick': '#8B8684',
       'light': '#E4E5E3',
+      'accent': '#B7CBD2',
     },
     fontFamily: {
       sans: ['Palanquin'],
+      serif: ['Palanquin'],
     },
   },
   plugins: [],
