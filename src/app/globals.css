@@ -23,8 +23,6 @@ body {
 
 .profile-img {
   border-radius: 0rem 2.1875rem;
-  width: 30rem;
-  height: 35rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
