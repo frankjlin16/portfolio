@@ -27,21 +27,21 @@ export default function ProjectCard({
       {id % 2 === 0 ? (
         <>
           <div className="col-span-1">
-            <div className="img-card w-full h-80">
+            <div className="img-card w-full h-[22rem]">
               <Image src={image} width={500} height={500} alt="Frank" />
             </div>
           </div>
           <div className="col-span-3 pl-10">
-            <div className="opacity-50 text-black text-xl font-semibold uppercase mt-8">
+            <div className="opacity-50 text-text text-xl font-semibold uppercase mt-8">
               {date}
             </div>
-            <div className="text-black text-3xl font-semibold uppercase">
-              <Link className="hover:text-brick" href={link}>
+            <div className="text-text text-3xl font-semibold uppercase">
+              <Link className="hover:text-primary" href={link}>
                 {title}
               </Link>
             </div>
-            <div className="w-52 h-px border border-black mt-10 mb-6"></div>
-            <div className="w-full h-24 text-black text-sm font-normal leading-normal">
+            <div className="w-52 h-px border border-text mt-10 mb-6"></div>
+            <div className="w-full text-text text-base font-normal leading-normal">
               {description}
             </div>
           </div>
@@ -49,21 +49,21 @@ export default function ProjectCard({
       ) : (
         <>
           <div className="col-span-3 pr-10">
-            <div className="opacity-50 text-black text-xl font-semibold uppercase mt-8">
+            <div className="opacity-50 text-text text-xl font-semibold uppercase mt-8">
               {date}
             </div>
-            <div className="text-black text-3xl font-semibold uppercase">
-              <Link className="hover:text-brick" href={link}>
+            <div className="text-text text-3xl font-semibold uppercase">
+              <Link className="hover:text-primary" href={link}>
                 {title}
               </Link>
             </div>
-            <div className="w-52 h-px border border-black mt-10 mb-6"></div>
-            <div className="w-full h-24 text-black text-sm font-normal leading-normal">
+            <div className="w-52 h-px border border-text mt-10 mb-6"></div>
+            <div className="w-full text-text text-base font-normal leading-normal">
               {description}
             </div>
           </div>
           <div className="col-span-1">
-            <div className="img-card w-full h-80">
+            <div className="img-card w-full h-[22rem]">
               <Image src={image} width={500} height={500} alt="Frank" />
             </div>
           </div>
