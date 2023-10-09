@@ -1,6 +1,53 @@
 import Navbar from "@/components/navbar";
 import frank from "public/frank.png";
 import Image from "next/image";
+import ProjectCard from "@/components/projectCard";
+
+const projects = [
+  {
+    id: 0,
+    date: "2022 (Ongoing)",
+    title: "CD-Library",
+    description: `This project comprised the creation of a React-based components library,
+    a critical element of the CodeDevils website rewrite project. The
+    library aims to fast-track development by offering pre-designed,
+    pre-tested building blocks for easy integration into new projects,
+    ensuring efficiency and uniformity. In this project, I led a team of
+    three developers, designing new components using Lerna and StorybookJS.
+    I assigned monthly tasks, provided support, and ensured our code aligned
+    with the project's standards. I delivered timely updates to the club
+    president and liaised with project leads from other teams to ensure our
+    User Interface (UI) components accurately mirrored the club's brand.
+    Additionally, I conducted extensive testing on multiple components to
+    adhere to the Web Content Accessibility Guidelines (WCAG).`,
+    image:
+      "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1856&q=80",
+    link: "https://github.com/ASU-CodeDevils/CD-Library",
+  },
+  {
+    id: 1,
+    date: "2020 (Ongoing)",
+    title: "Majestic Web",
+    description: `This project involved a complete revitalization of the company's website
+    design from scratch, all accomplished within a span of six months.
+    Utilizing the powerful Django framework and MySQL for the backend, the
+    team and I implemented the new website design, ensuring we met the
+    company's vision and goals. This was achieved through weekly
+    collaborations with the client to align our design and development
+    process with their expectations. Following the development phase, we
+    deployed the web application through Alibaba Cloud's EC2 service using
+    Gunicorn and Nginx as the web server tech stack. This process was
+    completed within a tight timeline of three days, demonstrating our
+    commitment to efficiency and timely delivery. Post-deployment, I
+    supervised the web server's operations, leveraging Alibaba Cloud's
+    monitoring software. This allowed us to maintain a smooth and efficient
+    operation of our web application, ensuring uninterrupted service and a
+    seamless user experience.`,
+    image:
+      "https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    link: "#", //TODO: Add link
+  },
+];
 
 export default function Index() {
   return (
@@ -19,16 +66,20 @@ export default function Index() {
                 </div>
                 <div className="w-48 h-px border-4 border-black mt-6"></div>
                 <div className="w-4/5 h-80 text-black text-sm font-normal leading-normal mt-6">
-                  I am a Software Engineering student with over two years of
-                  experience in full-stack web development, I bring a strong
-                  understanding of Django and React and a passion for building
-                  intuitive and scalable web applications. I am a quick and
-                  ambitious learner, constantly seeking to expand my knowledge
-                  and skill set. With creative problem-solving skills, I can
-                  effectively troubleshoot issues and develop innovative
-                  solutions to improve the software development process. I have
-                  experience working collaboratively in teams, ensuring
-                  high-quality products are delivered on time.
+                  As a passionate and experienced full-stack developer with
+                  close to 4 years of proven expertise in Django and React, I
+                  thrive on building intuitive and scalable web applications. My
+                  insatiable appetite for learning drives me to explore new tech
+                  stacks for each project, continuously expanding my knowledge
+                  and skill set. At Beijing Majestic, I successfully redesigned
+                  their website, ensuring consistent software maintenance beyond
+                  the initial development cycle, thanks to my resourcefulness
+                  and unwavering problem-solving skills. Additionally, as a
+                  webmaster at CodeDevils, I led a team of developers, fostering
+                  a collaborative environment and overseeing rapid project
+                  developments. I am eager to contribute to a dynamic team and
+                  drive the company&apos;s success forward through innovation
+                  and dedication.
                 </div>
               </div>
               <div>
@@ -45,61 +96,12 @@ export default function Index() {
           Projects
         </div>
         <div className="grid grid-cols-4 mt-10 gap-y-8">
-          <div className="col-span-1">
-            <div className="img-card w-full h-80">
-              <Image src={frank} width={500} height={500} alt="Frank" />
-            </div>
-          </div>
-          <div className="col-span-3 pl-10">
-            <div className="opacity-50 text-black text-xl font-semibold uppercase mt-8">
-              2022
-            </div>
-            <div className="text-black text-3xl font-semibold uppercase">
-              E-Web
-            </div>
-            <div className="w-52 h-px border border-black mt-10 mb-6"></div>
-            <div className="w-full h-24 text-black text-xs font-normal leading-normal">
-              Lorem ipsum dolor sit amet consectetur. Varius diam egestas
-              condimentum sed ullamcorper. Aliquet dui interdum hendrerit
-              suspendisse est amet. In et vitae egestas dictumst sapien feugiat.
-              Lectus enim in amet adipiscing senectus. Viverra ornare iaculis
-              consectetur at amet suspendisse turpis sapien. Adipiscing
-              elementum vitae cras arcu. Magna ut bibendum vel massa euismod sed
-              adipiscing. Egestas mattis tincidunt et malesuada tristique. Leo
-              fermentum mauris nisi non. Pulvinar mi consequat etiam risus
-              nullam lacus id vitae.
-            </div>
-          </div>
-          <div className="col-span-3 pr-10">
-            <div className="opacity-50 text-black text-xl font-semibold uppercase mt-8">
-              2021
-            </div>
-            <div className="text-black text-3xl font-semibold uppercase">
-              Rover
-            </div>
-            <div className="w-52 h-px border border-black mt-10 mb-6"></div>
-            <div className="w-full h-24 text-black text-xs font-normal leading-normal">
-              Lorem ipsum dolor sit amet consectetur. Aliquet a amet sagittis
-              consequat placerat eget velit justo. Nunc ipsum amet eget
-              bibendum. Tincidunt sed egestas tellus nunc donec ut congue
-              sagittis morbi. Hac duis et congue luctus turpis lorem ut tellus
-              amet. Turpis dolor sodales ac senectus in fringilla fames
-              volutpat. Libero tristique eu at morbi egestas donec commodo. Amet
-              vulputate tempus ac fermentum. Varius id vel cursus faucibus ut
-              tincidunt eget arcu. Diam id congue est integer vivamus. Montes
-              fringilla cursus mi sodales leo sollicitudin dictum lectus. Tortor
-              elementum non metus blandit. Maecenas arcu velit pharetra
-              suspendisse tristique aenean. Auctor vitae gravida elementum
-              bibendum.
-            </div>
-          </div>
-          <div className="col-span-1">
-            <div className="img-card w-full h-80">
-              <Image src={frank} width={500} height={500} alt="Frank" />
-            </div>
-          </div>
+          {projects.map((project) => (
+            <ProjectCard key={project.id} {...project} />
+          ))}
         </div>
       </div>
+      <div style={{height: 40 + 'em'}}></div>
     </>
   );
 }
