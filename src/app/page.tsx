@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar";
-import ImageCard from "@/components/imageCard";
+import frank from "public/frank.png";
+import Image from "next/image";
 
 export default function Index() {
   return (
@@ -32,12 +33,7 @@ export default function Index() {
               </div>
               <div>
                 <div className="img-card w-full h-[35rem]">
-                  <ImageCard
-                    src="https://lh3.googleusercontent.com/pw/AIL4fc9QO7fQqIzscLgDfuqq2Fg4idjh8veOM-qQe-VIXh_4KHf3JVT0ZmlnRRLK0vBGL8HK26pGv8fbaT4tdCUZYXB1WVDLpg9jewR_0l2o47a6m4XL-9Rc-lZb1SFSGW8cAvOLV2x-u8d1oxYp0vzNwXLE_YAY1xcl69yI2qHzrg-m3lgO-EMjFLtmZ5YiipZBvGH5w-OfyrvVDTaV5tSqROyRBlvXHtxu6IDZPvCad99NhEG1bPUYuHaMf0IBMWlDgWXHXgXJfmYlqXS9I-CZKOj2kJqpJq9ODLKMLnLEyWb-PIC_UFjTn8QqFQL4dZjukFKjfVgppOxH10L1yaoCYjpJeO-UapwpEtm0v3UcFSBjeyNG9sSYpGdCOCuaJ52lrsJvtMQ1GJUfWKPGJR7mRuP9A1bMAX8abF5TVxnCh-dgVHLVFa6NkQ83CsZaoZ1IXX8gDsKYtxeo3fSbNxuMfX_cXhDqhmqHHmIo-yZooLwVvt9rXqEX1fow_eSd0zJuHlSqDjKan2aQ4YfFPlotDHtCU8rU0kmK4cwghvHz0BTIytmwknlc7SARx26nCctEfeX1DZEBISW2C3YRMXtCh95g1PQWlNYzjbvX0l-usd2PSDC26ajrI3v8CYZk5uoj1rCohxRW1vozrtzpZ8RnEmc9wx8zSTKrLVrZWO2iOQnJDPxQcKY0BEgW2FuRch_hOH4-ZhV2FXyX3fnVuCWLTeJmz47SISpgo54S810Y4pmOu4gXGl9rczQJx8Cy4Uto__V7Afr6bmVkWoh52KYhoNCOxeQiqiOjcXwRciCGDpKxInJgktvoXkkN0zzotRGa75YTvh-G2QuzWcPDCHETX53mgv-pEIIqPkzzG6P6WSYWsGPHgGop_Xf2qqg_vYLSFrSFxISnRa1lWMC1ohRJLw6rppBZxlPABQ-Ccz3V9F9rFRc5qjVToyD_Lio=w688-h860-s-no?authuser=0"
-                    width={500}
-                    height={500}
-                    alt="Frank"
-                  />
+                  <Image src={frank} width={500} height={500} alt="Frank" />
                 </div>
               </div>
             </div>
@@ -51,12 +47,7 @@ export default function Index() {
         <div className="grid grid-cols-4 mt-10 gap-y-8">
           <div className="col-span-1">
             <div className="img-card w-full h-80">
-              <ImageCard
-                src="https://lh3.googleusercontent.com/pw/AIL4fc9QO7fQqIzscLgDfuqq2Fg4idjh8veOM-qQe-VIXh_4KHf3JVT0ZmlnRRLK0vBGL8HK26pGv8fbaT4tdCUZYXB1WVDLpg9jewR_0l2o47a6m4XL-9Rc-lZb1SFSGW8cAvOLV2x-u8d1oxYp0vzNwXLE_YAY1xcl69yI2qHzrg-m3lgO-EMjFLtmZ5YiipZBvGH5w-OfyrvVDTaV5tSqROyRBlvXHtxu6IDZPvCad99NhEG1bPUYuHaMf0IBMWlDgWXHXgXJfmYlqXS9I-CZKOj2kJqpJq9ODLKMLnLEyWb-PIC_UFjTn8QqFQL4dZjukFKjfVgppOxH10L1yaoCYjpJeO-UapwpEtm0v3UcFSBjeyNG9sSYpGdCOCuaJ52lrsJvtMQ1GJUfWKPGJR7mRuP9A1bMAX8abF5TVxnCh-dgVHLVFa6NkQ83CsZaoZ1IXX8gDsKYtxeo3fSbNxuMfX_cXhDqhmqHHmIo-yZooLwVvt9rXqEX1fow_eSd0zJuHlSqDjKan2aQ4YfFPlotDHtCU8rU0kmK4cwghvHz0BTIytmwknlc7SARx26nCctEfeX1DZEBISW2C3YRMXtCh95g1PQWlNYzjbvX0l-usd2PSDC26ajrI3v8CYZk5uoj1rCohxRW1vozrtzpZ8RnEmc9wx8zSTKrLVrZWO2iOQnJDPxQcKY0BEgW2FuRch_hOH4-ZhV2FXyX3fnVuCWLTeJmz47SISpgo54S810Y4pmOu4gXGl9rczQJx8Cy4Uto__V7Afr6bmVkWoh52KYhoNCOxeQiqiOjcXwRciCGDpKxInJgktvoXkkN0zzotRGa75YTvh-G2QuzWcPDCHETX53mgv-pEIIqPkzzG6P6WSYWsGPHgGop_Xf2qqg_vYLSFrSFxISnRa1lWMC1ohRJLw6rppBZxlPABQ-Ccz3V9F9rFRc5qjVToyD_Lio=w688-h860-s-no?authuser=0"
-                width={500}
-                height={500}
-                alt="Frank"
-              />
+              <Image src={frank} width={500} height={500} alt="Frank" />
             </div>
           </div>
           <div className="col-span-3 pl-10">
@@ -67,7 +58,17 @@ export default function Index() {
               E-Web
             </div>
             <div className="w-52 h-px border border-black mt-10 mb-6"></div>
-            <div className="w-full h-24 text-black text-xs font-normal leading-normal">Lorem ipsum dolor sit amet consectetur. Varius diam egestas condimentum sed ullamcorper. Aliquet dui interdum hendrerit suspendisse est amet. In et vitae egestas dictumst sapien feugiat. Lectus enim in amet adipiscing senectus. Viverra ornare iaculis consectetur at amet suspendisse turpis sapien. Adipiscing elementum vitae cras arcu. Magna ut bibendum vel massa euismod sed adipiscing. Egestas mattis tincidunt et malesuada tristique. Leo fermentum mauris nisi non. Pulvinar mi consequat etiam risus nullam lacus id vitae.</div>
+            <div className="w-full h-24 text-black text-xs font-normal leading-normal">
+              Lorem ipsum dolor sit amet consectetur. Varius diam egestas
+              condimentum sed ullamcorper. Aliquet dui interdum hendrerit
+              suspendisse est amet. In et vitae egestas dictumst sapien feugiat.
+              Lectus enim in amet adipiscing senectus. Viverra ornare iaculis
+              consectetur at amet suspendisse turpis sapien. Adipiscing
+              elementum vitae cras arcu. Magna ut bibendum vel massa euismod sed
+              adipiscing. Egestas mattis tincidunt et malesuada tristique. Leo
+              fermentum mauris nisi non. Pulvinar mi consequat etiam risus
+              nullam lacus id vitae.
+            </div>
           </div>
           <div className="col-span-3 pr-10">
             <div className="opacity-50 text-black text-xl font-semibold uppercase mt-8">
@@ -77,16 +78,24 @@ export default function Index() {
               Rover
             </div>
             <div className="w-52 h-px border border-black mt-10 mb-6"></div>
-            <div className="w-full h-24 text-black text-xs font-normal leading-normal">Lorem ipsum dolor sit amet consectetur. Aliquet a amet sagittis consequat placerat eget velit justo. Nunc ipsum amet eget bibendum. Tincidunt sed egestas tellus nunc donec ut congue sagittis morbi. Hac duis et congue luctus turpis lorem ut tellus amet. Turpis dolor sodales ac senectus in fringilla fames volutpat. Libero tristique eu at morbi egestas donec commodo. Amet vulputate tempus ac fermentum. Varius id vel cursus faucibus ut tincidunt eget arcu. Diam id congue est integer vivamus. Montes fringilla cursus mi sodales leo sollicitudin dictum lectus. Tortor elementum non metus blandit. Maecenas arcu velit pharetra suspendisse tristique aenean. Auctor vitae gravida elementum bibendum.</div>
+            <div className="w-full h-24 text-black text-xs font-normal leading-normal">
+              Lorem ipsum dolor sit amet consectetur. Aliquet a amet sagittis
+              consequat placerat eget velit justo. Nunc ipsum amet eget
+              bibendum. Tincidunt sed egestas tellus nunc donec ut congue
+              sagittis morbi. Hac duis et congue luctus turpis lorem ut tellus
+              amet. Turpis dolor sodales ac senectus in fringilla fames
+              volutpat. Libero tristique eu at morbi egestas donec commodo. Amet
+              vulputate tempus ac fermentum. Varius id vel cursus faucibus ut
+              tincidunt eget arcu. Diam id congue est integer vivamus. Montes
+              fringilla cursus mi sodales leo sollicitudin dictum lectus. Tortor
+              elementum non metus blandit. Maecenas arcu velit pharetra
+              suspendisse tristique aenean. Auctor vitae gravida elementum
+              bibendum.
+            </div>
           </div>
           <div className="col-span-1">
             <div className="img-card w-full h-80">
-              <ImageCard
-                src="https://lh3.googleusercontent.com/pw/AIL4fc9QO7fQqIzscLgDfuqq2Fg4idjh8veOM-qQe-VIXh_4KHf3JVT0ZmlnRRLK0vBGL8HK26pGv8fbaT4tdCUZYXB1WVDLpg9jewR_0l2o47a6m4XL-9Rc-lZb1SFSGW8cAvOLV2x-u8d1oxYp0vzNwXLE_YAY1xcl69yI2qHzrg-m3lgO-EMjFLtmZ5YiipZBvGH5w-OfyrvVDTaV5tSqROyRBlvXHtxu6IDZPvCad99NhEG1bPUYuHaMf0IBMWlDgWXHXgXJfmYlqXS9I-CZKOj2kJqpJq9ODLKMLnLEyWb-PIC_UFjTn8QqFQL4dZjukFKjfVgppOxH10L1yaoCYjpJeO-UapwpEtm0v3UcFSBjeyNG9sSYpGdCOCuaJ52lrsJvtMQ1GJUfWKPGJR7mRuP9A1bMAX8abF5TVxnCh-dgVHLVFa6NkQ83CsZaoZ1IXX8gDsKYtxeo3fSbNxuMfX_cXhDqhmqHHmIo-yZooLwVvt9rXqEX1fow_eSd0zJuHlSqDjKan2aQ4YfFPlotDHtCU8rU0kmK4cwghvHz0BTIytmwknlc7SARx26nCctEfeX1DZEBISW2C3YRMXtCh95g1PQWlNYzjbvX0l-usd2PSDC26ajrI3v8CYZk5uoj1rCohxRW1vozrtzpZ8RnEmc9wx8zSTKrLVrZWO2iOQnJDPxQcKY0BEgW2FuRch_hOH4-ZhV2FXyX3fnVuCWLTeJmz47SISpgo54S810Y4pmOu4gXGl9rczQJx8Cy4Uto__V7Afr6bmVkWoh52KYhoNCOxeQiqiOjcXwRciCGDpKxInJgktvoXkkN0zzotRGa75YTvh-G2QuzWcPDCHETX53mgv-pEIIqPkzzG6P6WSYWsGPHgGop_Xf2qqg_vYLSFrSFxISnRa1lWMC1ohRJLw6rppBZxlPABQ-Ccz3V9F9rFRc5qjVToyD_Lio=w688-h860-s-no?authuser=0"
-                width={500}
-                height={500}
-                alt="Frank"
-              />
+              <Image src={frank} width={500} height={500} alt="Frank" />
             </div>
           </div>
         </div>
