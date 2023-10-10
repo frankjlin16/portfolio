@@ -2,10 +2,12 @@ import Image from "next/image";
 
 const infos = [
   {
+    id: 0,
     title: "Location",
     content: "Phoenix, AZ",
   },
   {
+    id: 1,
     title: "Email",
     content: process.env.EMAIL,
   },
@@ -19,7 +21,7 @@ export default function Contact() {
           Contact
         </div>
         {infos.map((info) => (
-          <div className="mb-5">
+          <div className="mb-5" key={info.id}>
             <div className="font-bold mb-2">{info.title}</div>
             <div>{info.content}</div>
           </div>
