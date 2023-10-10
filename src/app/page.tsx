@@ -53,7 +53,7 @@ const projects = [
 export default function Index() {
   return (
     <>
-      <div id="about" className="w-100 h-[45rem] bg-backgorund">
+      <div id="about" className="h-[45rem] bg-backgorund">
         <div className="container mx-auto pt-5">
           <Navbar />
           <div className="container mt-20">
@@ -92,19 +92,19 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <div id="projects" className="w-100 bg-secondary py-20">
+      <div id="projects" className="bg-secondary py-20">
         <div className="container mx-auto">
-          <div className="uppercase font-bold text-3xl text-text mt-10">
+          <div className="uppercase font-bold text-3xl text-text my-10">
             Projects
           </div>
-          <div className="grid grid-cols-4 mt-10 gap-y-8">
-            {projects.map((project) => (
-              <ProjectCard key={project.id} {...project} />
-            ))}
-          </div>
+          {projects.map((project) => (
+            <ProjectCard key={project.id} {...project} />
+          ))}
         </div>
       </div>
-      <Contact />
+      <div id="contact" className="bg-background">
+        <Contact />
+      </div>
     </>
   );
 }
