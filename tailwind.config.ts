@@ -9,8 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brick: "#8B8684",
-        light: "#E4E5E3",
         text: "#131110",
         background: "#e3e4e2",
         primary: "#6a5d58",
