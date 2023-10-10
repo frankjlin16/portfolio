@@ -18,16 +18,12 @@ export default function ProjectCard({
   image,
   link,
 }: ProjectCardProps) {
-  const isOdd = (id: number) => {
-    return id % 2 !== 0;
-  };
-
   return (
-    <>
-      {id % 2 === 0 ? (
+    <div className="grid grid-cols-4 mb-20">  
+        {id % 2 === 0 ? (
         <>
           <div className="col-span-1">
-            <div className="img-card w-full h-[22rem]">
+            <div className="img-card w-full h-[26rem]">
               <Image src={image} width={500} height={500} alt="Frank" />
             </div>
           </div>
@@ -63,12 +59,12 @@ export default function ProjectCard({
             </div>
           </div>
           <div className="col-span-1">
-            <div className="img-card w-full h-[22rem]">
+            <div className="img-card w-full h-[26rem]">
               <Image src={image} width={500} height={500} alt="Frank" />
             </div>
           </div>
         </>
       )}
-    </>
+    </div>
   );
 }
