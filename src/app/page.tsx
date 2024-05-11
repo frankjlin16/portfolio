@@ -85,7 +85,7 @@ export default function Index() {
               </div>
               <div>
                 <div className="img-card w-full h-[40rem]">
-                  <Image src={frank} width={500} height={500} alt="Frank" />
+                  <Image src={frank} width={500} height={500} alt="Frank" priority={true}/>
                 </div>
               </div>
             </div>
