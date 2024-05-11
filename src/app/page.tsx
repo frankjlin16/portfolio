@@ -53,20 +53,20 @@ const projects = [
 export default function Index() {
   return (
     <>
-      <div id="about" className="h-[45rem] bg-backgorund">
+      <div id="about" className="h-[45rem] bg-background">
         <div className="container mx-auto pt-5">
           <Navbar />
           <div className="container mt-20">
             <div className="grid grid-cols-2">
               <div className="pt-10">
-                <div className="uppercase font-bold text-3xl text-black">
+                <div className="uppercase font-bold text-3xl text-text">
                   Hi, I&apos;m Frank!
                 </div>
-                <div className="uppercase font-bold text-3xl text-black mt-2">
+                <div className="uppercase font-bold text-3xl text-text mt-2">
                   Full-Stack Developer
                 </div>
-                <div className="w-48 h-px border-4 border-black mt-6"></div>
-                <div className="w-4/5 h-80 text-black text-base font-normal leading-normal mt-6">
+                <div className="w-48 h-px border-4 border-text mt-6"></div>
+                <div className="w-4/5 h-80 text-text text-base font-normal leading-normal mt-6">
                   As a passionate and experienced full-stack developer with
                   close to 4 years of proven expertise in Django and React, I
                   thrive on building intuitive and scalable web applications. My
@@ -92,7 +92,7 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <div id="projects" className="bg-secondary py-20">
+      <div id="projects" className="bg-background py-20">
         <div className="container mx-auto">
           <div className="uppercase font-bold text-3xl text-text my-10">
             Projects

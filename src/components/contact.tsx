@@ -22,8 +22,8 @@ export default function Contact() {
         </div>
         {infos.map((info) => (
           <div className="mb-5" key={info.id}>
-            <div className="font-bold mb-2">{info.title}</div>
-            <div>{info.content}</div>
+            <div className="font-bold mb-2 text-text">{info.title}</div>
+            <div className="text-text">{info.content}</div>
           </div>
         ))}
       </div>

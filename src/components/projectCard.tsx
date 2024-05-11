@@ -28,11 +28,11 @@ export default function ProjectCard({
             </div>
           </div>
           <div className="col-span-3 pl-10">
-            <div className="opacity-50 text-text text-xl font-semibold uppercase mt-8">
+            <div className="text-secondary text-xl font-semibold uppercase mt-8">
               {date}
             </div>
             <div className="text-text text-3xl font-semibold uppercase">
-              <Link className="hover:text-primary" href={link}>
+              <Link className="hover:text-accent" href={link}>
                 {title}
               </Link>
             </div>
@@ -49,7 +49,7 @@ export default function ProjectCard({
               {date}
             </div>
             <div className="text-text text-3xl font-semibold uppercase">
-              <Link className="hover:text-primary" href={link}>
+              <Link className="hover:text-accent" href={link}>
                 {title}
               </Link>
             </div>
